@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "cellsreloadable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dankinsoid/CellsReloadable.git",
+      "state" : {
+        "revision" : "d4d1caac5dacfb32252da92ce7cd664458383c6b",
+        "version" : "1.1.2"
+      }
+    },
+    {
+      "identity" : "compositionallayoutdsl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/faberNovel/CompositionalLayoutDSL.git",
+      "state" : {
+        "revision" : "3b1c5adad64f031e28417ee9460dd58556cb6e33",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

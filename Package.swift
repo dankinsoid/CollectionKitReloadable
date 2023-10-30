@@ -4,19 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "${NAME}",
+    name: "CollectionKitReloadable",
     platforms: [
         .iOS(.v13),
     ],
     products: [
-        .library(name: "${NAME}", targets: ["${NAME}"]),
+        .library(name: "CollectionKitReloadable", targets: ["CollectionKitReloadable"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/faberNovel/CompositionalLayoutDSL.git", from: "0.2.0"),
+        .package(url: "https://github.com/dankinsoid/CellsReloadable.git", from: "1.1.2")
     ],
     targets: [
         .target(
-            name: "${NAME}",
+            name: "CollectionKitReloadable",
             dependencies: [
+                "CompositionalLayoutDSL",
+                "CellsReloadable"
             ]
         )
     ]
